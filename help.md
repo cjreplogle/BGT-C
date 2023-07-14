@@ -10,7 +10,8 @@
 
 [File Naming](#file-naming)
 
-## About
+## About 
+
 Hello, and welcome to WLSGT (Whitlock Lab Scaffold GCode Tool). This software was developed by CJ Replogle (a student-researcher) at Cincinnati Children's as a method of generating gcode files for the Whitlock lab for use in bioprinting. Existing software did not have good control over different parameters involving printhead movement and the built-in ability. This software in particular is designed for use with the Cellink BioX 3D printer, although created gcodes might work fine with others.to rapidly create gcodes to test things like scaffold porosity and infill structure so I decided to make a program to do it myself.
 
 Some things to consider when using this. Firstly, I am a biomedical engineer, not a programmer. This software is developed in-house and probably (definitely) is not perfect. It should get the job done for testing purposes and potentially small scale clinical applications. I probably have not integrated a .stl slice method so this software works a bit different than most 'slicers' in that it generates a preset shape and allows you to mess with the specific printing parameters behind the scenes.This has its drawbacks with respect to model customization but as this is primarily designed for printing predesigned implant sizes for surgical use, this is less relevant for the time being. I might go about making a more general-use .stl processor using similar curve math used here eventually if I end up pursing another idea I have in mind. (Top secret!!!)
@@ -19,7 +20,7 @@ As for how this software works, it can be thought of as generating the 3D curve 
 
 Why? Inflow of mensenchymal stem cells and other growth factors into the scaffolds this software is designed for is critical to fostering a regenerative environment for osteochondral tissue. That being said, the singular connected curves maintain superior tensile properties to lattice-based counterparts due to microstructural limitations of thermal cross-linking of the bioink.
 
-With that word salad out of the way, if there are any issues encountered with this software, reach out to me at replogle.17@buckeyemail.osu.edu (should work until ~2026) and tell me my code is bad. (I already know)
+With that word salad out of the way, if there are any issues encountered with this software, reach out to me at replogle.17@buckeyemail.osu.edu (should work until ~2026) and I'll try to help. [^](#bgt-documentation)
 
 ## Infill Parameters
 
@@ -47,7 +48,7 @@ Recommended Settings: 0.6mm nozzle -> 1.5-2mm pore size, 0.4mm nozzle -> 1.0->1.
 * Also particular to the concentric cylinder infill layers. This just determines how many radial protrusions there are in a single 2D cross section. (Rather than a set distance for rectilinear infills)
 
 ### Fill (Concentric Infill Only)
-* Determines whether to repeat the outer pattern on the inside of the structure, use a rectilinear infill (not yet), or keep the scaffold hollow.
+* Determines whether to repeat the outer pattern on the inside of the structure, use a rectilinear infill (not yet), or keep the scaffold hollow. [^](#bgt-documentation)
 
 ## Transformation Parameters
 
@@ -70,7 +71,7 @@ Linkage angle may be combined with other layer transformations to allow for the 
 * Enables transformation by-layer rather than alternating between an original preset and a transformed second layer. Useful for trianglar linkages where the structure depends on infills at more than 2 angles.
 
 ### Switchback Layering
-* This prints patterns in pairs of layers. The printer will take the same path it took to generate a layer backwards to the starting point (Doing this additional times has not been needed for our purposes but if it eventually is I can implement it fairly easily.)
+* This prints patterns in pairs of layers. The printer will take the same path it took to generate a layer backwards to the starting point (Doing this additional times has not been needed for our purposes but if it eventually is I can implement it fairly easily.) [^](#bgt-documentation)
 
 ## Printer Configuration
 
@@ -84,7 +85,7 @@ Linkage angle may be combined with other layer transformations to allow for the 
 * The amount of time in milliseconds the printer stops before moving to the next layer. This can be modified to allow layers to properly harden before material is deposited on top. (I generally use ~10000).
 
 ### Speed
-* This is the original speed the printhead moves at. Due to how the printer reads .gcode files you need to use an F(value) at least once for the printer to properly extrude. The actual value the printer reads is in mm/min but I generally just recommend setting it to around 60 and tweaking it from there until print properties are good.
+* This is the original speed the printhead moves at. Due to how the printer reads .gcode files you need to use an F(value) at least once for the printer to properly extrude. The actual value the printer reads is in mm/min but I generally just recommend setting it to around 60 and tweaking it from there until print properties are good. [^](#bgt-documentation)
 
 ## File Naming
 
@@ -112,5 +113,5 @@ Example:
 
 When creating file names, please try to make them in this order. I might create a functionality in the slicer I made to automatically name them later to save people the time in the future (15 seconds spent typing these strings of text adds up if you are testing en masse!).
 
-Hopefully this shows how this naming system condenses information in a consistent way. If you have any other questions, email me. (replogle.17@buckeyemail.osu.edu) and I’d be happy to help out.  
+Hopefully this shows how this naming system condenses information in a consistent way. If you have any other questions, email me. (replogle.17@buckeyemail.osu.edu) and I’d be happy to help out.  [^](#bgt-documentation)
 
