@@ -1,14 +1,14 @@
-# BGT Wiki
+# BGT Documentation
 
-[About](##About)
+[About](#about)
 
-[Infill Parameters](##Infill-Parameters)
+[Infill Parameters](#infill-parameters)
 
-[Transformation Parameters](##Transformation-Parameters)
+[Transformation Parameters](#transformation-parameters)
 
-[Printer Configuration](##Printer-Configuration)
+[Printer Configuration](#printer-configuration)
 
-[File Naming](##File-Naming)
+[File Naming](#file-naming)
 
 ## About
 Hello, and welcome to WLSGT (Whitlock Lab Scaffold GCode Tool). This software was developed by CJ Replogle (a student-researcher) at Cincinnati Children's as a method of generating gcode files for the Whitlock lab for use in bioprinting. Existing software did not have good control over different parameters involving printhead movement and the built-in ability. This software in particular is designed for use with the Cellink BioX 3D printer, although created gcodes might work fine with others.to rapidly create gcodes to test things like scaffold porosity and infill structure so I decided to make a program to do it myself.
