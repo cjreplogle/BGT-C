@@ -37,6 +37,9 @@ With that word salad out of the way, if there are any issues encountered with th
 * The distance between the central point of the printhead between horizontal segments in the layer patterning for rectilinear infills. (Note: larger printheads will need larger pore sizes to compensate!)
 Recommended Settings: 0.6mm nozzle -> 1.5-2mm pore size, 0.4mm nozzle -> 1.0->1.5mm pore size
 
+### Path Linkage
+* For cylindrical rectilinear patterns, generates a segment at each end of the 2D curve to close the circular structure.
+
 ### Pore Depth
 * This is particular to the outer layer of the concentric cylinder infill. It just determines how far inwards the outer pattern's inner grid will go.
 
