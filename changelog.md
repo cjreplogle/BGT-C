@@ -21,6 +21,10 @@
  - Settings implementation (so it doesn't ask every minor detail in the generation sequence)
  - QOL Changes
 
+### v0.6 (7/18/23)
+ - File read/write revamp.
+ - Configuration saving
+
 ### Planning to add:
  - Toggle advanced mode which gives more options
  - Load from .bpc (bioprintconfig) file on start so user settings are saved
