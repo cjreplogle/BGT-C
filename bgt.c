@@ -40,7 +40,7 @@ int main(void){
         while(state==0){
                 printf("\e[1;1H\e[2J");
                 printf("/-------------------------------------------------------\\\n");
-                printf("|--------- Whitlock Lab Bioprinting GCode Tool ---------|\n");
+                printf("|--------------- Bioprinting GCode Tool ----------------|\n");
                 printf("|---------- v0.5, made by CJ Replogle c. 2023 ----------|\n");
                 printf("|-------------------------------------------------------|\n");
                 printf("|                                                       |\n");
