@@ -19,7 +19,6 @@ int main(void){
         int state=0;
         int sel=0;
 
-        /*
         FILE *config;
         config = fopen("config.bpc","r");
         //default placeholders if fscan sequence doesnt work+init "global" variables
@@ -34,7 +33,7 @@ int main(void){
         fclose(config);
         printf("\n");
         //printf("\e[1;1H\e[2J");
-        */
+        
 
 
         while(state==0){
@@ -429,33 +428,8 @@ void tesselator(int RES, float layer, float zmax, float cooldown, float speed){ 
         printf("  SECTION %d: ",i+1);
         scanf("\n%i",&switchback[i]);
     }
-    /*
-    //Prompt layer size
-    printf("WHAT IS THE LAYER SIZE: (MM)\n");
-    float layer;
-    scanf("\n%f",&layer);
-        
-    //Prompt max height
-    printf("WHAT IS THE SCAFFOLD HEIGHT: (MM)\n");
-    float zmax;
-    scanf("\n%f", &zmax);
-
-    printf("COOLDOWN TIME BETWEEN LAYERS: (MS)\n");
-    float cooldown;
-    scanf("\n%f",&cooldown);
-
-    printf("PRINTHEAD SPEED: (MM/S)\n");
-    float speed;
-    scanf("\n%f",&speed);
-    speed*=60; */
-
-    /*int switchback[sect];
-    for(int i=0;i<sect;i++){
-        switchback[i]=0;
-    }*/
 
     printf("\nDEBUG OUTPUT: \n\n");
-
 
     //Calculate bi/trilayer switch points
     float sw=zmax/phead;
