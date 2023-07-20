@@ -6,4 +6,4 @@ I've revamped this in Java for inter-operating system compatibility + I can use 
 
 [Mac Version](https://github.com/cjreplogle/BGT-C/releases/tag/bgt-c)
 
-[Windows Version]()
+[Windows Version](https://github.com/cjreplogle/BGT-C/releases/tag/bgt-c-windows)
